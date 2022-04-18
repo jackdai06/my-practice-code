@@ -1,0 +1,15 @@
+int main()
+{
+	int n;
+	double t = 1;
+	double sn = 0;
+	for (n = 1; n <= 20; n++ );
+	{
+		t = t * n;
+		sn = sn + t;
+	
+	}
+	printf("%22.15e\n",sn);
+	return 0;
+
+}
