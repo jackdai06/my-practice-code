@@ -73,7 +73,59 @@ int main()
 	}
 	return 0;
 }
+下面是我重新写的
+int main()
+	{
+		double price = 0.0;
+		int month = 0;
+		int day = 0;
+		int a = 0;
+		double cash = 0;
+		scanf_s("%lf %d %d %d", &price, &month, &day, &a);
+		if (a ==0)
+		{
+			if (month == 11 && day == 11)
+			{
+				cash = price - price * 0.3;
+				printf("%.2lf\n", cash);
+			}
+			else if (month == 12 && day == 12)
+			{
+				cash = price - price * 0.2;
+				printf("%.2lf\n", cash);
+			}
+			else
+				printf("%.2lf\n", price);
 
+		}
+		if (a == 1)
+		{
+			if (month == 11 && day == 11)
+			{
+				if ((price * 0.7 - 50) > 0)
+					printf("%.2lf\n", price * 0.7 - 50);
+				else
+					printf("0.00\n");
+			}
+			else if (month == 12 && day == 12)
+			{
+				if ((price * 0.8 - 50) > 0)
+					printf("%.2lf\n", price * 0.8 - 50);
+				else
+					printf("0.00\n");
+			}
+			else
+				printf("%.2lf\n", price);
+		}
+		return 0;
+
+
+
+
+
+
+
+	}
 
 
 
