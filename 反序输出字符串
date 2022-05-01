@@ -1,0 +1,35 @@
+题目：
+写一个函数，使输入一个字符串按反序存放，在主函数中输入和输出字符串；
+
+
+#include<stdio.h>
+#include<string.h>
+
+void convert(char str[])
+{
+
+	int i = 0, j = 0, t = 0;
+	for (i = 0,j=strlen(str)-1;i<(strlen(str)/2);i++,j--)
+	{
+		
+			t = str[i];
+			str[i] = str[j ];
+			str[j ] = t;
+		
+	}
+}
+
+int main()
+{
+	int c = 0;
+	char str[80];
+	scanf("%s", str);
+	
+	convert(str);
+	printf("%s\n", str);
+
+
+
+
+}
+		
